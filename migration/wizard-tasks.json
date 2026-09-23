@@ -1,0 +1,26 @@
+{
+  "tasks": [
+    { "need": "Appels et prises de messages", "label": "Appels & messages", "min_hours": 2, "max_hours": 5, "default_qty": 0 },
+    { "need": "Gestion des e-mails et demandes clients", "label": "E-mails & demandes", "min_hours": 3, "max_hours": 8, "default_qty": 0 },
+    { "need": "Rendez-vous et organisation du planning", "label": "Agenda & planning", "min_hours": 2, "max_hours": 5, "default_qty": 0 },
+    { "need": "Suivi commercial, relances et CRM", "label": "Suivi commercial", "min_hours": 3, "max_hours": 8, "default_qty": 0 },
+    { "need": "Gestion des réseaux sociaux", "label": "Réseaux sociaux", "min_hours": 2, "max_hours": 6, "default_qty": 0 },
+    { "need": "Création et suivi des devis", "label": "Devis", "min_hours": 2, "max_hours": 5, "default_qty": 0 },
+    { "need": "Factures, règlements et relances", "label": "Factures & relances", "min_hours": 2, "max_hours": 6, "default_qty": 0 },
+    { "need": "Dossiers, classement et archivage", "label": "Classement & archivage", "min_hours": 2, "max_hours": 5, "default_qty": 0 },
+    { "need": "Saisie, tableaux et pièces pour le comptable", "label": "Tableaux & comptable", "min_hours": 2, "max_hours": 6, "default_qty": 0 }
+  ],
+  "plan_thresholds": {
+    "essentiel": { "max_hours": 7, "plan": "Essentiel", "hours": 5 },
+    "confort": { "max_hours": 14, "plan": "Confort", "hours": 10 },
+    "serenite": { "plan": "Sérénité", "hours": 20 }
+  },
+  "qty_options": [
+    { "value": 0, "label": "—" },
+    { "value": 1, "label": "1" },
+    { "value": 2, "label": "2" },
+    { "value": 3, "label": "3" },
+    { "value": 4, "label": "4" },
+    { "value": 5, "label": "5+" }
+  ]
+}

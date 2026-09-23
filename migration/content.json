@@ -1,0 +1,305 @@
+{
+  "hero": {
+    "eyebrow": "VOTRE PARTENAIRE ADMINISTRATIF",
+    "title": "Votre administratif\nsous contrôle.",
+    "description": "BuroPulse accompagne les artisans, indépendants, TPE et PME dans leur gestion administrative et leur suivi commercial, à distance et selon leurs besoins.",
+    "cta_primary": "Trouver l'offre adaptée",
+    "cta_secondary": "Découvrir nos services",
+    "signature": "Votre sérénité, notre priorité.",
+    "location": "BAS-RHIN (67) · À DISTANCE",
+    "tagline": "ORGANISER · SIMPLIFIER · AVANCER"
+  },
+  "services": {
+    "eyebrow": "UN SOUTIEN CONCRET, AU QUOTIDIEN",
+    "title": "Votre administratif vous prend trop de temps ?",
+    "title_em": "BuroPulse prend le relais.",
+    "intro": "Les devis s'accumulent, les factures doivent partir, les clients attendent une réponse et votre planning déborde ? Nous vous accompagnons ponctuellement ou régulièrement, selon les besoins de votre entreprise.",
+    "items": [
+      {
+        "icon": "folder",
+        "title": "Gestion administrative",
+        "intro": "Des documents structurés.\nUne organisation plus simple.",
+        "prestations": [
+          "Dossiers et documents administratifs",
+          "Classement et archivage numérique",
+          "Saisie et mise en forme",
+          "Tableaux de suivi et pièces comptables"
+        ]
+      },
+      {
+        "icon": "document",
+        "title": "Devis & facturation",
+        "intro": "Un suivi rigoureux,\ndu devis au règlement.",
+        "prestations": [
+          "Création et suivi des devis",
+          "Établissement et envoi des factures",
+          "Suivi des règlements et relances",
+          "Suivi administratif des impayés"
+        ]
+      },
+      {
+        "icon": "phone",
+        "title": "Relation client & commercial",
+        "intro": "Une présence attentive.\nDes clients bien accompagnés.",
+        "prestations": [
+          "Appels, e-mails et prises de messages",
+          "Réponses et suivi des demandes",
+          "Relances clients et prospects",
+          "Mise à jour CRM et fichiers clients"
+        ]
+      },
+      {
+        "icon": "calendar",
+        "title": "Organisation & planning",
+        "intro": "Les bonnes informations,\nau bon moment.",
+        "prestations": [
+          "Prise et confirmation de rendez-vous",
+          "Gestion des agendas et plannings",
+          "Organisation des interventions",
+          "Échéances et coordination administrative"
+        ]
+      },
+      {
+        "icon": "social",
+        "title": "Gestion des réseaux sociaux",
+        "intro": "Une communication organisée.\nUne présence suivie.",
+        "prestations": [
+          "Organisation du calendrier éditorial",
+          "Préparation et mise en forme des publications",
+          "Programmation des contenus validés",
+          "Suivi des messages et commentaires"
+        ]
+      }
+    ],
+    "closing": "Vous restez concentré sur votre métier.\nBuroPulse prend en charge les tâches convenues.",
+    "all_prestations_label": "Voir toutes les prestations"
+  },
+  "personas": {
+    "eyebrow": "DANS VOTRE QUOTIDIEN",
+    "title": "Qu'aimeriez-vous déléguer ?",
+    "intro": "Trois situations possibles pour vous projeter dans l'accompagnement.",
+    "items": [
+      {
+        "icon": "document",
+        "title": "Vous êtes artisan",
+        "description": "Vous passez la journée sur vos chantiers et les documents s'accumulent.",
+        "tasks": ["Préparer vos devis et factures", "Suivre les règlements", "Organiser vos rendez-vous"],
+        "activity_key": "artisan"
+      },
+      {
+        "icon": "calendar",
+        "title": "Vous êtes indépendant",
+        "description": "Entre vos missions et vos clients, l'organisation passe au second plan.",
+        "tasks": ["Gérer vos e-mails et demandes", "Tenir votre agenda à jour", "Organiser vos publications"],
+        "activity_key": "independant"
+      },
+      {
+        "icon": "folder",
+        "title": "Vous dirigez une TPE",
+        "description": "Votre équipe avance, mais le suivi administratif vous mobilise encore.",
+        "tasks": ["Mettre à jour vos dossiers", "Suivre vos prospects et relances", "Préparer les pièces pour le comptable"],
+        "activity_key": "tpe"
+      }
+    ],
+    "note": "Exemples illustratifs. Les tâches et le temps nécessaire sont définis ensemble selon votre activité."
+  },
+  "plans": {
+    "eyebrow": "NOS FORFAITS MENSUELS",
+    "title": "La juste place pour l'administratif.",
+    "title_em": "Le bon rythme pour votre entreprise.",
+    "intro": "Un accompagnement adapté à votre entreprise, avec un volume d'heures clair.",
+    "items": [
+      {
+        "name": "Essentiel",
+        "tag": "UN PREMIER RELAIS",
+        "hours": 5,
+        "price_ht": 195,
+        "hourly_price": 39,
+        "description": "Déléguer quelques tâches récurrentes et alléger votre quotidien.",
+        "features": ["Prestations selon vos besoins", "5 heures d'accompagnement"],
+        "icon": "leaf",
+        "featured": false
+      },
+      {
+        "name": "Confort",
+        "tag": "UN SOUTIEN RÉGULIER",
+        "hours": 10,
+        "price_ht": 380,
+        "hourly_price": 38,
+        "description": "Organiser un accompagnement administratif régulier et structuré.",
+        "features": ["Prestations selon vos besoins", "10 heures d'accompagnement"],
+        "icon": "calendar",
+        "featured": true,
+        "ribbon": "LE PLUS CHOISI"
+      },
+      {
+        "name": "Sérénité",
+        "tag": "UNE VRAIE CONTINUITÉ",
+        "hours": 20,
+        "price_ht": 720,
+        "hourly_price": 36,
+        "description": "Externaliser une vraie partie de l'administratif et du suivi commercial.",
+        "features": ["Prestations selon vos besoins", "20 heures d'accompagnement"],
+        "icon": "target",
+        "featured": false
+      }
+    ],
+    "custom_offer": {
+      "title": "Un besoin ponctuel ou spécifique ?",
+      "description": "Votre besoin ne correspond pas à l'un de nos forfaits ? Nos prestations ponctuelles et sur mesure sont proposées sur devis.",
+      "cta": "Demander un devis personnalisé"
+    }
+  },
+  "wizard": {
+    "eyebrow": "QUEL ACCOMPAGNEMENT POUR VOUS ?",
+    "title": "Vos besoins,",
+    "title_em": "notre point de départ.",
+    "intro": "Quelques choix pour identifier une offre et préparer notre premier échange.",
+    "steps": ["Vos besoins", "Votre rythme", "Votre offre"],
+    "step1": {
+      "title": "Que souhaitez-vous nous confier ?",
+      "intro": "Choisissez une ou plusieurs tâches. Nous les préciserons ensemble.",
+      "columns": [
+        {
+          "legend": "Relation & communication",
+          "needs": [
+            { "value": "Appels et prises de messages", "label": "Appels & prises de messages", "icon": "phone" },
+            { "value": "Gestion des e-mails et demandes clients", "label": "E-mails & demandes clients", "icon": "mail" },
+            { "value": "Rendez-vous et organisation du planning", "label": "Rendez-vous & planning", "icon": "calendar" },
+            { "value": "Suivi commercial, relances et CRM", "label": "Suivi commercial & CRM", "icon": "chart" },
+            { "value": "Gestion des réseaux sociaux", "label": "Gestion des réseaux sociaux", "icon": "social" }
+          ]
+        },
+        {
+          "legend": "Gestion & organisation",
+          "needs": [
+            { "value": "Création et suivi des devis", "label": "Création & suivi des devis", "icon": "document" },
+            { "value": "Factures, règlements et relances", "label": "Factures, règlements & relances", "icon": "document" },
+            { "value": "Dossiers, classement et archivage", "label": "Dossiers, classement & archivage", "icon": "folder" },
+            { "value": "Saisie, tableaux et pièces pour le comptable", "label": "Tableaux & pièces comptables", "icon": "chart" }
+          ]
+        }
+      ]
+    },
+    "step2": {
+      "title": "Partons de vos tâches du mois.",
+      "intro": "Indiquez les volumes à déléguer pour obtenir un premier repère. Nous le précisons ensemble lors de notre échange.",
+      "rhythm_options": [
+        { "value": "monthly", "label": "Un accompagnement mensuel", "description": "Des tâches à déléguer régulièrement.", "default": true },
+        { "value": "occasional", "label": "Un besoin ponctuel", "description": "Une mission précise, sur devis." },
+        { "value": "unknown", "label": "À estimer ensemble", "description": "Nous précisons le volume avec vous." }
+      ],
+      "estimate_modes": [
+        { "value": "tasks", "label": "À partir de mes tâches", "default": true },
+        { "value": "hours", "label": "Je connais déjà mes heures" }
+      ],
+      "hours_range": { "min": 1, "max": 30, "default": 10, "step": 1 }
+    },
+    "step3": {
+      "eyebrow": "NOTRE SUGGESTION POUR VOUS",
+      "note": "Cette orientation est indicative. Nous validons ensemble le volume et les tâches avant le démarrage de la mission.",
+      "summary_title": "Votre demande, en un regard",
+      "cta": "Échanger avec BuroPulse",
+      "restart": "Recommencer le parcours"
+    }
+  },
+  "faq": {
+    "eyebrow": "UNE COLLABORATION CLAIRE",
+    "title": "Des repères simples.",
+    "title_em": "Pour avancer en confiance.",
+    "items": [
+      {
+        "question": "Comment fonctionnent les forfaits ?",
+        "answer": "Chaque forfait comprend 5, 10 ou 20 heures pour le mois concerné, avec une facturation mensuelle. Les heures non consommées ne sont pas reportables. Les prestations sont choisies ensemble en fonction de votre activité et du volume disponible."
+      },
+      {
+        "question": "Et les heures supplémentaires ou missions ponctuelles ?",
+        "answer": "Toute demande hors forfait fait l'objet d'un accord préalable. Les prestations ponctuelles et spécifiques sont proposées sur devis personnalisé. Les conditions de dépassement sont précisées dans l'offre validée avant intervention."
+      },
+      {
+        "question": "Comment se déroule une mission à distance ?",
+        "answer": "Nous définissons les tâches, les priorités et les outils de suivi. Les documents et les accès nécessaires sont transmis de manière organisée et confidentielle. Les devis et factures sont établis à partir des informations et conditions fournies ou validées par le client. Les pièces destinées au cabinet comptable sont préparées pour lui être transmises."
+      },
+      {
+        "question": "Démarrage, résiliation et délai de prévenance",
+        "answer": "Le calendrier de démarrage, les conditions de résiliation et le délai de prévenance restent à confirmer avant la publication définitive. Ils seront précisés dans les documents contractuels soumis à validation."
+      }
+    ]
+  },
+  "about": {
+    "eyebrow": "UNE ENTREPRISE, UNE PRÉSENCE HUMAINE",
+    "title": "Derrière",
+    "title_em": "BuroPulse",
+    "paragraphs": [
+      "BuroPulse est née d'une volonté simple : proposer aux entrepreneurs un accompagnement administratif et commercial humain, flexible et adapté à leur réalité.",
+      "Fondée par Fanny SCHALL, diplômée en Gestion des PME et en Développement des Affaires, BuroPulse associe compétences administratives, sens de l'organisation et expérience de la relation client."
+    ],
+    "signature": "De l'organisation.\nDe l'écoute. De la sérénité.",
+    "cta": "Faisons connaissance",
+    "founder_name": "Fanny SCHALL",
+    "founder_role": "Fondatrice de BuroPulse"
+  },
+  "benefits": {
+    "eyebrow": "POURQUOI BUROPULSE ?",
+    "title": "Un soutien qui s'adapte",
+    "title_em": "à votre réalité.",
+    "items": [
+      { "icon": "clock", "title": "Flexible", "description": "Déléguez selon les besoins de votre entreprise, ponctuellement ou régulièrement." },
+      { "icon": "folder", "title": "Sans embauche", "description": "Bénéficiez d'un soutien administratif sans créer un poste salarié permanent." },
+      { "icon": "target", "title": "Sur mesure", "description": "Nous organisons l'accompagnement autour de vos tâches et de vos priorités." },
+      { "icon": "shield", "title": "À distance", "description": "Une collaboration organisée et confidentielle, depuis le Bas-Rhin." }
+    ]
+  },
+  "process": {
+    "eyebrow": "COMMENT ÇA FONCTIONNE ?",
+    "title": "BuroPulse prend le relais.",
+    "title_em": "Vous gardez la visibilité.",
+    "steps": [
+      { "number": "01", "title": "Nous échangeons", "description": "Nous découvrons votre activité et les tâches qui vous prennent du temps." },
+      { "number": "02", "title": "Nous définissons vos besoins", "description": "Nous déterminons ensemble l'accompagnement et les priorités adaptés." },
+      { "number": "03", "title": "BuroPulse prend le relais", "description": "Les informations et les accès nécessaires sont transmis de manière organisée." },
+      { "number": "04", "title": "Vous gagnez en sérénité", "description": "Les tâches convenues sont prises en charge et leur avancement reste visible." }
+    ]
+  },
+  "contact": {
+    "eyebrow": "PARLONS DE VOTRE ENTREPRISE",
+    "title": "Et si votre administratif\nne faisait plus partie\nde votre charge mentale ?",
+    "intro": "Parlons de votre entreprise, de votre organisation et des tâches que vous aimeriez enfin déléguer.",
+    "email": "contact@buropulse.fr",
+    "location": "Bas-Rhin (67) · Prestations à distance",
+    "signature": "Votre sérénité, notre priorité.",
+    "form": {
+      "title": "Demander un premier échange",
+      "intro": "Décrivez votre besoin. Nous préparons la suite ensemble.",
+      "fields": {
+        "name": { "label": "Nom", "required": true, "max": 100, "placeholder": "Votre nom" },
+        "company": { "label": "Entreprise", "required": false, "max": 120, "placeholder": "Nom de votre entreprise" },
+        "email": { "label": "E-mail", "required": true, "max": 200, "type": "email", "placeholder": "vous@entreprise.fr" },
+        "phone": { "label": "Téléphone", "required": false, "max": 40, "type": "tel", "placeholder": "Facultatif" },
+        "need": {
+          "label": "Besoin", "required": true,
+          "options": [
+            "Relation client & communication",
+            "Gestion administrative & organisation",
+            "Gestion des réseaux sociaux",
+            "Plusieurs besoins",
+            "Besoin ponctuel ou sur mesure",
+            "À définir ensemble"
+          ]
+        },
+        "message": { "label": "Message", "required": true, "max": 3500, "type": "textarea", "placeholder": "Les tâches à déléguer, votre organisation, vos disponibilités…" }
+      },
+      "note": "* Champs requis. Votre demande est transmise à BuroPulse pour préparer un premier échange. Elle ne vous engage à aucun forfait.",
+      "submit": "Envoyer ma demande",
+      "privacy_link": "Consulter la politique de confidentialité"
+    }
+  },
+  "footer": {
+    "tagline": "ORGANISER · SIMPLIFIER · AVANCER",
+    "email": "contact@buropulse.fr",
+    "location": "Bas-Rhin (67) · À distance",
+    "copyright": "© 2026 BuroPulse",
+    "links": ["CGV", "Mentions légales", "Politique de confidentialité"]
+  },
+  "mobile_contact_button": "Parlons de vos besoins"
+}
