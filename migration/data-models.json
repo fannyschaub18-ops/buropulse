@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "ContactRequest",
+      "description": "Demandes soumises via le formulaire de contact",
+      "fields": [
+        { "name": "name", "type": "text", "required": true, "max_length": 100, "description": "Nom du contact" },
+        { "name": "company", "type": "text", "required": false, "max_length": 120, "description": "Nom de l'entreprise" },
+        { "name": "email", "type": "text", "required": true, "max_length": 200, "format": "email", "description": "Email validé" },
+        { "name": "phone", "type": "text", "required": false, "max_length": 40, "description": "Téléphone facultatif" },
+        { "name": "need", "type": "text", "required": true, "max_length": 100, "description": "Catégorie de besoin", "enum": [
+          "Relation client & communication",
+          "Gestion administrative & organisation",
+          "Gestion des réseaux sociaux",
+          "Plusieurs besoins",
+          "Besoin ponctuel ou sur mesure",
+          "À définir ensemble"
+        ]},
+        { "name": "message", "type": "text", "required": true, "max_length": 3500, "description": "Description du besoin" },
+        { "name": "selection", "type": "text", "required": false, "max_length": 350, "description": "Forfait sélectionné via le wizard" },
+        { "name": "summary", "type": "text", "required": false, "max_length": 5000, "description": "Résumé du parcours wizard" },
+        { "name": "reference", "type": "text", "required": false, "max_length": 20, "description": "Format: BP-XXXXXXXXXXXX (auto-généré)" },
+        { "name": "status", "type": "text", "required": false, "max_length": 20, "default": "new", "enum": ["new", "contacted", "closed"] }
+      ],
+      "permissions": {
+        "create": "anyone",
+        "read": "admin",
+        "update": "admin",
+        "delete": "admin"
+      }
+    },
+    {
+      "name": "SiteContent",
+      "description": "Contenu éditable du site (CMS léger)",
+      "fields": [
+        { "name": "key", "type": "text", "required": true, "unique": true, "max_length": 100, "description": "Clé du champ (ex: heroTitle)" },
+        { "name": "value", "type": "text", "required": true, "description": "Valeur du champ" },
+        { "name": "group", "type": "text", "required": false, "max_length": 100, "description": "Groupe d'affichage (ex: Accueil)" },
+        { "name": "order", "type": "number", "required": false, "default": 0, "description": "Ordre d'affichage" }
+      ],
+      "permissions": {
+        "create": "admin",
+        "read": "anyone",
+        "update": "admin",
+        "delete": "admin"
+      }
+    }
+  ],
+  "backend_functions": [
+    {
+      "name": "submitContactRequest",
+      "method": "POST",
+      "path": "/api/contact-request",
+      "description": "Soumet et valide une demande de contact",
+      "input": {
+        "id": "string (uuid v4)",
+        "name": "string (max 100, required)",
+        "company": "string (max 120, optional)",
+        "email": "string (max 200, email format, required)",
+        "phone": "string (max 40, optional)",
+        "need": "string (enum, required)",
+        "message": "string (max 3500, required)",
+        "selection": "string (max 350, optional)",
+        "summary": "string (max 5000, optional)",
+        "website": "string (honeypot, must be empty)"
+      },
+      "output": {
+        "id": "string (uuid)",
+        "reference": "string (BP-XXXXXXXXXXXX)"
+      },
+      "validation_rules": [
+        "Honeypot: 'website' field must be empty",
+        "Rate limit: max 10 requests per hour per email",
+        "Dedup: if same id already submitted with same data, return existing reference",
+        "Email format validation",
+        "Need must be in enum",
+        "Total payload size < 16000 chars"
+      ]
+    },
+    {
+      "name": "getSiteContent",
+      "method": "GET",
+      "path": "/api/site-content",
+      "description": "Récupère tout le contenu éditable du site",
+      "output": {
+        "values": "object (key -> value)"
+      },
+      "validation_rules": [
+        "Each value validated by kind: text, price, email, phone, document",
+        "Price: numeric, > 0, <= 999999",
+        "Email: valid format",
+        "Phone: valid format if non-empty"
+      ]
+    }
+  ]
+}

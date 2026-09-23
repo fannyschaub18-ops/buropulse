@@ -1,0 +1,78 @@
+{
+  "colors": {
+    "green": "#183A35",
+    "ivory": "#F7F3EC",
+    "beige": "#D8C8B8",
+    "gold": "#B49A6C",
+    "ink": "#252525",
+    "white": "#FFFFFF"
+  },
+  "fonts": {
+    "serif": { "family": "Playfair Display", "usage": "Titres, prix, signatures", "weights": [400] },
+    "sans": { "family": "Montserrat", "usage": "Corps, boutons, navigation", "weights": [400, 500, 600] },
+    "script": { "family": "Allura", "usage": "Signatures manuscrites", "weights": [400] }
+  },
+  "font_sizes": {
+    "h1": "clamp(42px, 4.3vw, 62px)",
+    "h2": "clamp(32px, 3.05vw, 43px)",
+    "h3": "25px",
+    "body": "15px",
+    "eyebrow": "12px",
+    "button": "12px",
+    "small": "11px",
+    "tiny": "10px"
+  },
+  "line_heights": {
+    "body": "1.75",
+    "heading": "1.22",
+    "intro": "1.9"
+  },
+  "layout": {
+    "max_width": "1240px",
+    "wrap_padding": "44px",
+    "block_padding": "94px",
+    "header_height": "auto",
+    "scroll_padding_top": "110px"
+  },
+  "radius": {
+    "button": "7px",
+    "card": "13px",
+    "advisor": "18px",
+    "badge": "20px",
+    "circle": "50%"
+  },
+  "shadows": {
+    "card": "0 8px 25px #183A3504",
+    "card_hover": "0 8px 25px #183A3504",
+    "featured": "0 16px 32px #183A3517",
+    "advisor": "0 18px 40px #183A3510",
+    "paper_note": "10px 15px 28px #183A3528"
+  },
+  "borders": {
+    "light": "1px solid #B49A6C33",
+    "medium": "1px solid #B49A6C40",
+    "strong": "1px solid #B49A6C60",
+    "divider": "1px solid #B49A6C55"
+  },
+  "transitions": {
+    "default": "0.18s",
+    "hover": "background .18s, transform .18s, box-shadow .18s"
+  },
+  "grid": {
+    "services": "repeat(3, minmax(0, 1fr))",
+    "plans": "repeat(3, 1fr)",
+    "benefits": "repeat(4, 1fr)",
+    "process": "repeat(4, 1fr)",
+    "hero": "1.08fr 1fr",
+    "founder": "0.88fr 1.12fr",
+    "contact": "1fr 1fr",
+    "result": "1fr 1fr",
+    "need_columns": "1fr 1fr",
+    "rhythm_options": "repeat(3, 1fr)"
+  },
+  "images": {
+    "logo": "https://static.wixstatic.com/media/cc90c4_a5b2967a415e48468bd688de464373c7~mv2.png",
+    "founder_portrait": "https://static.wixstatic.com/media/cc90c4_9a8a5522275b4a5fa13952f050fb5074~mv2.webp",
+    "brand_stamp": "https://static.wixstatic.com/media/cc90c4_03094153bbbc4a5f8e6208d289dc70eb~mv2.png"
+  }
+}
