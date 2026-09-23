@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BuroPulse — Assistance administrative & commerciale</title>
+  <meta name="description" content="BuroPulse accompagne les artisans, indépendants, TPE et PME dans leur gestion administrative et leur suivi commercial, à distance et selon leurs besoins.">
+  <script src="src/public/custom-elements/buropulse-site.js"></script>
+  <style>html,body{margin:0;padding:0}buropulse-site{display:block}</style>
+</head>
+<body>
+  <buropulse-site id="site"></buropulse-site>
+  <script>
+    // The custom element dispatches a 'bp-submit' event when the contact form
+    // is submitted. In the Wix environment this is handled by page code calling
+    // a backend web method. In this standalone preview we simulate a successful
+    // submission so the form UX is fully functional.
+    const site = document.getElementById('site');
+    site.addEventListener('bp-submit', event => {
+      const { correlation, payload } = event.detail;
+      const id = payload.id;
+      const reference = 'BP-' + id.replaceAll('-', '').slice(0, 12).toUpperCase();
+      setTimeout(() => {
+        site.setAttribute('bp-response', JSON.stringify({
+          correlation,
+          result: { id, reference }
+        }));
+      }, 600);
+    });
+  </script>
+</body>
+</html>
